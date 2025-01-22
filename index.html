@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="image/logo1.png" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolo">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
+			</nav>
+	
+	<section class="home">
+		<div class="home-info">
+			<h1>Habibur Rahman</h1>
+			<h2>I'm a 
+				<span style="--i:4;" data-text="Web Designer">Web Designer</span>
+				<span style="--i:3;" data-text="Youtuber">Youtuber</span>
+				<span style="--i:2;" data-text="Blogger">Blogger</span>
+				<span style="--i:1;" data-text="Designer">Designer</span>
+			</h2>
+			<div class="btn-sci">
+				<a href="image/Habib-Resume.pdf" class="btn">Download my CV</a>
+			</div>
+		</div>
+	
+		<div class="home-img">
+			<div class="img-box">
+				<div class="img-item">
+					<img src="image/h2.png" >
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- ---------------- about part start ------- -->
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="image/h2.png" >
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p> I’m Habibur Rahman, a graphic and web designer with a passion for creating visually engaging and user-friendly designs. I specialize in logo design, branding, and website development, focusing on delivering high-quality, functional designs that meet client needs. With proficiency in tools like Adobe Creative Suite and web technologies, I aim to bring creative ideas to life through design.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Graphics Design</span><br>I am experienced in designing logos, brand identities, marketing materials, digital graphics, and more.</li>
+							<li><span>Web Design</span><br>Web page Design</li>
+							<li><span>Office Application</span><br>Windows10, MS Office (Ms Word, Excel, Powerpoint, Access)</li>
+							<li><span>HSE Award</span><br>Health Safety and Environment</li>
+							<li><span>MMM App</span><br>Oparating Material Maintenance Management System</li>
+							<li><span>DIM App</span><br>Oparating Distributed Information Management</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2021 - current</span><br>SmarterOne Fashion Shope, as a Sales Executive, Khilgoan, Dhaka-1219</li>
+							<li><span>2019 - 2021</span><br>Maroon Clthing, as an Account Manager, Uttara-12, Dhaka</li>
+							<li><span>2013 - 2019</span><br>BK Fashions, as an Account Manager, Uttara-12, Dhaka</li>
+							<li><span>2006 - 2013</span><br>Bangladesh Computer Academy, as a Senior Teacher, Malibagh, Dhaka</li>
+							<li><span>1999 - 2006</span><br>Kuwait Oil Co., as a Technical Assistant, Ahmadi, Kuwait</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>BSS</span><br>BSS Honours in Social Welfare from DU</li>
+							<li><span>HSC</span><br>Higher Secondary School Certificate, Dhaka</li>
+							<li><span>SSC</span><br>Secondary School Certificate, Rajshahi</li>
+							<li><span>HDCS</span><br>Higher Diploma in Computer Scence, Kuwait</li>
+							<li><span>Diploma in Graphics Design</span><br>Desh Institute of Technology, Dhaka</li>
+							<li><span>Web Design with AI</span><br>UY Lab, Dhaka</li>
+							<li><span>Diplom in Office Aplication</span><br>Jubo Unnayan Computer Center, Dhaka</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ---------------- about part end ------- -->
+
+	<!-- ------------- services part Start------------- -->
+	<div id="services">
+		<div class="cntaiiner">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Graphics Design</h2>
+					<p>As a graphic designer, I offer creative services including logo design, branding, print materials, digital assets, packaging, UI/UX design, and custom illustrations. I’m passionate about delivering visually impactful designs that communicate effectively and help your ideas stand out. Let’s create something amazing together!</p>
+					<a href="image/About Adobe Illustrator.pdf">Learn more</a>
+				</div>
+
+				<div>
+					<i class="fa-solid fa-crop"></i>
+					<h2>Web Design</h2>
+					<p>As a web designer, I specialize in creating visually stunning and user-friendly websites. My services include responsive web design, UI/UX optimization, landing page creation, website redesigns, and custom WordPress solutions. Let’s bring your online vision to life!</p>
+					<a href="#">Learn more</a>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>Office App</h2>
+					<p>With expertise in MS Office, I offer services such as professional document creation, data analysis in Excel, PowerPoint presentations, template design, mail merge, data entry, and MS Office training to optimize workflows and boost productivity.
+					</p>
+					<a href="image/Microsoft Office Notes 2007.docx">Learn more</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- ------------- services part end------------- -->
+
+ <!-- ------------- portfolio html part start ---------- -->
+ <div id="portfolo">
+ 	<div class="container">
+ 		<h1 class="sub-title">My Work</h1>
+ 		<div class="work-lst">
+ 			<div class="work">
+ 				<img src="image/job6.jpg">
+ 				<div class="layer">
+ 					<h3>Social Media App</h3>
+ 					<p>Working with BPL (Bangla Poshak Ltd.) Download it from play store.</p>
+ 					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+ 				</div>
+ 			</div>
+
+ 			<div class="work">
+ 				<img src="image/job7.jpg">
+ 					<div class="layer">
+ 					<h3>Music Media App</h3>
+ 					<p>Working in Our Office at Khilgoan BK Office. Download it from play store.</p>
+ 					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+ 				</div>
+ 			</div>
+
+ 				<div class="work">
+ 				<img src="image/job9.jpg">
+ 					<div class="layer">
+ 					<h3>Music Media App</h3>
+ 					<p>Working for Site Visite at Madaripur. Download it from play store.</p>
+ 					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+ 				</div>
+ 			</div>
+
+ 			<div class="work">
+ 				<img src="image/job8.jpg">
+ 					<div class="layer">
+ 					<h3>Online Shoping App</h3>
+ 					<p>Working in Our Layout (Showroom) at Khilgoan. Download it from play store.</p>
+ 					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+ 				</div>
+ 			</div>
+ 			
+ 		</div>
+ 		<a href="#" class="btn">See more</a>
+ 	</div>
+ </div>
+
+ <!-- ------------- portfolio html part end ---------- -->
+
+ <!-- ------------- contact html part start ---------- -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-sharp fa-solid fa-paper-plane"></i>hab9b.bd@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>+ 88 01715 050 951</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<a href="image/Habib-Resume.pdf" download class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright &copy; 2025 || Made with <i class="fa-solid fa-heart"></i> by Habib</p>
+	</div>
+	<!-- <div class="footer-iconTop">
+		<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+	</div> -->
+</div>
+
+
+ <!-- ------------- contact html part end ---------- -->
+
+	<script>
+		
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+
+	<script>
+		
+		var sidemenu = document.getElementById("sidemenu")
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+
+	</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxXeXIAau3NIdZOAQg1VF_gUjLiM_4UdEwFbPB2NWbABSX-rX-fHFa2dQQ7SaY9_6Qe/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      		msg.innerHTML = "Message sent successfully"
+      		setTimeout(function(){
+      			msg.innerHTML = ""
+      		},5000)
+      		form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
